@@ -1,0 +1,20 @@
+language: node_js
+
+node_js:
+  - 10.16
+
+env: NODE_ENV=production
+
+install: npm install --production=false
+
+addons:
+  apt:
+    packages:
+    - libgconf-2-4
+
+cache:
+  directories:
+    - ~/.npm
+    - ~/.cache
+
+script: npm run ci
