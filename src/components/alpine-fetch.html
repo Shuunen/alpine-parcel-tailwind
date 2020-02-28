@@ -1,0 +1,30 @@
+
+
+<div class="flex flex-col mt-4 pt-4 border-t-2 w-1/2">
+    <h2>Example : using fetch & async data with Alpine</h2>
+
+    <div class="mt-4" x-data="inputState()">
+        <button @click="onClick()">Fetch a todo list</button>
+        <ul class="list-disc mt-4 ml-6">
+            <template x-for="todo in todos" :key="todo">
+                <li x-text="todo.title"></li>
+            </template>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function inputState () {
+      return {
+        todos: [],
+        onClick () {
+          fetch('https://jsonplaceholder.typicode.com/users/1/todos')
+            .then(response => response.json())
+            .then(todos => {
+              todos.splice(5)
+              this.todos = todos
+            })
+        },
+      }
+    }
+</script>
