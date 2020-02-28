@@ -1,9 +1,10 @@
 {
-  "author": "",
+  "author": "Romain Racamier-Lafon <romain.racamier@gmail.com>",
+  "bugs": "https://github.com/Shuunen/alpine-parcel-tailwind/issues",
   "config": {
     "port": 8000
   },
-  "description": "",
+  "description": "Web stack featuring Alpine.js, Parcel and Tailwind.css",
   "devDependencies": {
     "alpinejs": "^2.0.1",
     "cross-var": "1.1.0",
@@ -24,10 +25,15 @@
   "files": [
     "src"
   ],
+  "homepage": "https://github.com/Shuunen/alpine-parcel-tailwind",
   "keywords": [],
-  "license": "ISC",
-  "main": "index.js",
-  "name": "alpine-parcel-tailwind",
+  "license": "GPL-3.0",
+  "name": "@shuunen/alpine-parcel-tailwind",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shuunen/alpine-parcel-tailwind.git"
+  },
   "scripts": {
     "build": "parcel build src/index.html --public-url . --no-source-maps",
     "check": "npx repo-check",
@@ -42,5 +48,5 @@
     "update": "npx npm-check-updates -u",
     "watch": "cross-var parcel src/index.html --port $npm_package_config_port"
   },
-  "version": "1.0.0"
+  "version": "0.0.1"
 }
