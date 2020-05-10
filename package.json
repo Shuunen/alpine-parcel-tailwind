@@ -28,7 +28,12 @@
     "src"
   ],
   "homepage": "https://github.com/Shuunen/alpine-parcel-tailwind",
-  "keywords": [],
+  "keywords": [
+    "alpine",
+    "parcel",
+    "tailwind",
+    "boilerplate"
+  ],
   "license": "GPL-3.0",
   "name": "@shuunen/alpine-parcel-tailwind",
   "private": true,
@@ -37,8 +42,7 @@
     "url": "https://github.com/Shuunen/alpine-parcel-tailwind.git"
   },
   "scripts": {
-    "build": "parcel build src/index.html --public-url . --no-source-maps",
-    "check": "npx repo-check",
+    "build": "parcel build src/index.html --public-url . --no-source-maps --detailed-report",
     "ci": "npm run test",
     "dev": "run-p watch ",
     "lint": "eslint --fix --ignore-path .gitignore --ext .js,.html .",
