@@ -1,14 +1,10 @@
 {
   "author": "Romain Racamier-Lafon <romain.racamier@gmail.com>",
   "bugs": "https://github.com/Shuunen/alpine-parcel-tailwind/issues",
-  "config": {
-    "port": 8000
-  },
   "description": "Web stack featuring Alpine.js, Parcel and Tailwind.css",
   "devDependencies": {
     "@vanillawc/wc-marquee": "latest",
-    "alpinejs": "2.0.1",
-    "cross-var": "1.1.0",
+    "alpinejs": "2.3.1",
     "eslint": "6.8.0",
     "eslint-config-standard": "14.1.0",
     "eslint-plugin-html": "6.0.0",
@@ -48,11 +44,11 @@
     "lint": "eslint --fix --ignore-path .gitignore --ext .js,.html .",
     "prebuild": "rimraf dist/*",
     "prestart": "npm run build",
-    "serve": "cross-var serve dist --listen $npm_package_config_port --single",
+    "serve": "serve dist --listen 8000 --single",
     "start": "npm run serve",
     "test": "run-s check lint build",
     "update": "npx npm-check-updates -u",
-    "watch": "cross-var parcel src/index.html --port $npm_package_config_port"
+    "watch": "parcel src/index.html --port 8000"
   },
   "version": "0.0.1"
 }
