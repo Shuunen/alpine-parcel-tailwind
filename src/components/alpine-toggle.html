@@ -1,10 +1,10 @@
 <div class="flex flex-col">
 
-    <h2>Example : playing with Alpine data-binding</h2>
+  <h2>Example : playing with Alpine data-binding</h2>
 
-    <div x-data="{ me: false }">
-        <p class="my-4">Hello <span x-text="me ? 'me ?!' : 'you ^^'"></span></p>
-        <button @click="me = !me" x-text="me ? 'Hey you !': 'It\'s me :)'"></button>
-    </div>
+  <div x-data="{ me: false }">
+    <p class="my-4">Hello <span x-text="me ? 'me ?!' : 'you ^^'"></span></p>
+    <button @click="me = !me" x-text="me ? 'Hey you !': 'It\'s me :)'"></button>
+  </div>
 
 </div>
