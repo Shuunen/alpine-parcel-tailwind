@@ -15,5 +15,5 @@ module.exports = {
   plugins: [
     'html',
   ],
-  rules
+  rules,
 }
