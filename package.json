@@ -20,7 +20,7 @@
     "posthtml-include": "1.4.3",
     "repo-check": "1.10.0",
     "rimraf": "3.0.2",
-    "serve": "11.3.0",
+    "serve": "11.3.1",
     "tailwindcss": "1.4.6"
   },
   "files": [
