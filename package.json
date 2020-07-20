@@ -4,7 +4,7 @@
   "description": "Web stack featuring Alpine.js, Parcel and Tailwind.css",
   "devDependencies": {
     "@vanillawc/wc-marquee": "latest",
-    "alpinejs": "2.4.1",
+    "alpinejs": "2.5.0",
     "ava": "3.10.1",
     "eslint": "7.5.0",
     "eslint-config-standard": "14.1.1",
