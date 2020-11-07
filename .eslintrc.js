@@ -7,6 +7,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'standard',
+    'plugin:unicorn/recommended',
   ],
   parserOptions: {
     ecmaVersion: 2018,
@@ -14,6 +15,7 @@ module.exports = {
   },
   plugins: [
     'html',
+    'unicorn',
   ],
   rules,
 }

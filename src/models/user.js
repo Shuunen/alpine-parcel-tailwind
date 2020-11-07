@@ -6,7 +6,7 @@ export class User {
   }
 
   detectId () {
-    if (!this.email.length) return
+    if (this.email.length === 0) return
     this.id = this.email.split('@')[0]
   }
 }
