@@ -22,7 +22,7 @@
     "repo-check": "1.11.0",
     "rimraf": "3.0.2",
     "serve": "11.3.2",
-    "tailwindcss": "1.9.6"
+    "tailwindcss": "2.0.1"
   },
   "files": [
     "src"
